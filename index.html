@@ -8,6 +8,7 @@
       name="description"
       content="re:Memoryは、親子の写真や言葉をいったん眠らせ、未来の節目に届ける思い出アプリです。"
     >
+    <link rel="icon" href="./assets/logo.png">
     <style>
 :root {
   --ink: #1f2a2a;
@@ -92,13 +93,12 @@ h3 {
   font-weight: 850;
 }
 
-.logo-symbol {
-  width: 28px;
-  height: 28px;
-  background:
-    radial-gradient(circle at center, var(--paper) 34%, transparent 36%),
-    conic-gradient(var(--green) 0 68%, var(--clay) 68% 100%);
+.logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
   border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(31, 42, 42, 0.12);
 }
 
 .nav {
@@ -608,7 +608,7 @@ h3 {
   <body>
     <header class="header">
       <a class="logo" href="#top" aria-label="re:Memory トップへ">
-        <span class="logo-symbol" aria-hidden="true"></span>
+        <img src="./assets/logo.png" alt="" aria-hidden="true">
         <span>re:Memory</span>
       </a>
       <nav class="nav" aria-label="ページ内ナビゲーション">
